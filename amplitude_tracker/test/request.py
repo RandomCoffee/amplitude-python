@@ -3,8 +3,8 @@ import unittest
 import json
 import requests
 
-from amplipy.request import post, DatetimeSerializer
-from amplipy.test import patch_amplitude_request
+from amplitude_tracker.request import post, DatetimeSerializer
+from amplitude_tracker.test import patch_amplitude_request
 
 
 class TestRequests(unittest.TestCase):

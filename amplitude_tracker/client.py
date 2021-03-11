@@ -6,10 +6,10 @@ import atexit
 
 from six import string_types
 
-from amplipy.utils import clean
-from amplipy.consumer import Consumer
-from amplipy.request import post
-from amplipy.version import VERSION
+from amplitude_tracker.utils import clean
+from amplitude_tracker.consumer import Consumer
+from amplitude_tracker.request import post
+from amplitude_tracker.version import VERSION
 
 try:
     import queue

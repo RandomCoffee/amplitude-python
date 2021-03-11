@@ -11,7 +11,7 @@ from mock import patch, MagicMock
 
 def all_names():
     for _, modname, _ in pkgutil.iter_modules(__path__):
-        yield 'amplipy.test.' + modname
+        yield 'amplitude_tracker.test.' + modname
 
 
 def all():

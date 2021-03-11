@@ -3,7 +3,7 @@ import logging
 import json
 from requests import sessions
 
-from amplipy.version import VERSION
+from amplitude_tracker.version import VERSION
 
 _session = sessions.Session()
 

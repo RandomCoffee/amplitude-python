@@ -1,6 +1,6 @@
 
-from amplipy.version import VERSION
-from amplipy.client import Client
+from amplitude_tracker.version import VERSION
+from amplitude_tracker.client import Client
 
 __version__ = VERSION
 
