@@ -62,7 +62,7 @@ Every call `track` method *does not* result in an HTTP request, but is queued in
 
 By default, this library will flush:
 
-* every 100 messages (control with `upload_size`)
-* if 0.5 seconds has passed since the last flush (control with `upload_interval`)
+* every `100` messages (control with `upload_size`)
+* if `0.5` seconds has passed since the last flush (control with `upload_interval`)
 
-There is a maximum of 500KB per batch request and 32KB per call.
+There is a maximum of `500KB` per batch request and `32KB` per call.
