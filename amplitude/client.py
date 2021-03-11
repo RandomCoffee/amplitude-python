@@ -75,6 +75,9 @@ class Client(object):
         require('event_type', event_type, string_types)
         require('user_properties', user_properties, dict)
         require('event_properties', event_properties, dict)
+        event_properties.update({
+            'lib_version': VERSION
+        })
         msg = {
             'user_id': user_id,
             'insert_id': insert_id,

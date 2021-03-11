@@ -38,7 +38,7 @@ class TestClient(unittest.TestCase):
         self.assertTrue(isinstance(msg['time'], int))
         self.assertEqual(msg['user_id'], 'userId')
         self.assertEqual(msg['user_properties'], {})
-        self.assertEqual(msg['event_properties'], {})
+        self.assertEqual(msg['event_properties'], {'lib_version': VERSION})
 
     @patch_amplitude_request()
     def test_stringifies_user_id(self):
@@ -68,7 +68,7 @@ class TestClient(unittest.TestCase):
 
         self.assertEqual(msg['time'], 1234)
         self.assertEqual(msg['user_properties'], {'property': 'value'})
-        self.assertEqual(msg['event_properties'], {})
+        self.assertEqual(msg['event_properties'], {'lib_version': VERSION})
         self.assertEqual(msg['ip'], '192.168.0.1')
         self.assertEqual(msg['event_type'], 'python test event')
         self.assertEqual(msg['insert_id'], 'insertId')
