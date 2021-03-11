@@ -31,7 +31,7 @@ tests_require = [
 ]
 
 setup(
-    name='amplitude-python',
+    name='amplitude-py',
     version=VERSION,
     url='https://github.com/RandomCoffee/amplitude',
     author='RandomCoffee',
