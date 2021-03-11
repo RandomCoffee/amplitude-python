@@ -14,13 +14,11 @@ from version import VERSION
 long_description = '''
 Amplitude Tracker
 =================
-
 Amplitude Tracker library lets you record analytics data from your
 Python code to `Amplitude`_
 
 Getting Started
 ---------------
-
 Install ``amplitude-tracker`` using pip:
 
 ::
@@ -41,7 +39,6 @@ initialize a new Client for each write_key.
 
 Development Settings
 --------------------
-
 The default initialization settings are production-ready and queue
 messages to be processed by a background thread.
 
@@ -61,7 +58,6 @@ print out the response you’re seeing from the Amplitude’s API.
 
 Track
 -----
-
 ``track`` lets you record the actions your users perform. Every action
 triggers what we call an “event”, which can also have associated
 properties.
@@ -79,7 +75,6 @@ properties.
 
 Batching
 --------
-
 This library is built to support high performance environments. That
 means it is safe to use amplitude-tracker on a web server that’s serving
 hundreds of requests per second.
