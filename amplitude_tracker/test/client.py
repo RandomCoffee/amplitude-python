@@ -178,7 +178,7 @@ class TestClient(unittest.TestCase):
                         flush_at=10, flush_interval=3)
 
         def mock_post_fn(*args, **kwargs):
-            self.assertEqual(len(kwargs['batch']), 10)
+            self.assertEqual(len(kwargs['events']), 10)
 
         # the post function should be called 2 times, with a batch size of 10
         # each time.
