@@ -4,7 +4,7 @@ import monotonic
 import backoff
 import json
 
-from amplitude.request import post, APIError, DatetimeSerializer
+from amplipy.request import post, APIError, DatetimeSerializer
 
 try:
     from queue import Empty

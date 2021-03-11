@@ -5,7 +5,7 @@ import unittest
 from dateutil.tz import tzutc
 import six
 
-from amplitude import utils
+from amplipy import utils
 
 
 class TestUtils(unittest.TestCase):

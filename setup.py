@@ -8,7 +8,7 @@ except ImportError:
     from distutils.core import setup
 
 # Don't import analytics-python module here, since deps may not be installed
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'amplitude'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'amplipy'))
 from version import VERSION
 
 long_description = '''
@@ -31,15 +31,15 @@ tests_require = [
 ]
 
 setup(
-    name='amplitude-py',
+    name='amplipy',
     version=VERSION,
     url='https://github.com/RandomCoffee/amplitude',
     author='RandomCoffee',
     author_email='tech@random-coffee.com',
     maintainer='RandomCoffee',
     maintainer_email='tech@random-coffee.com',
-    test_suite='amplitude.test.all',
-    packages=['amplitude', 'amplitude.test'],
+    test_suite='amplipy.test.all',
+    packages=['amplipy', 'amplipy.test'],
     license='MIT License',
     install_requires=install_requires,
     extras_require={

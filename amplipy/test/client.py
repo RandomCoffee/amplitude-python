@@ -4,9 +4,9 @@ import six
 import mock
 import time
 
-from amplitude.version import VERSION
-from amplitude.client import Client
-from amplitude.test import patch_amplitude_request
+from amplipy.version import VERSION
+from amplipy.client import Client
+from amplipy.test import patch_amplitude_request
 
 
 class TestClient(unittest.TestCase):
@@ -182,7 +182,7 @@ class TestClient(unittest.TestCase):
 
         # the post function should be called 2 times, with a batch size of 10
         # each time.
-        with mock.patch('amplitude.consumer.post', side_effect=mock_post_fn) \
+        with mock.patch('amplipy.consumer.post', side_effect=mock_post_fn) \
                 as mock_post:
             for _ in range(20):
                 client.track(
