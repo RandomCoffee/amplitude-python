@@ -12,7 +12,56 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'amplitude_tracker'))
 from version import VERSION
 
 long_description = '''
-Documentation and more details at https://developers.amplitude.com/docs/http-api-v2
+Amplitude Tracker
+==============
+
+Amplitude Tracker library lets you record analytics data from your Python code to [Amplitude](https://amplitude.com)
+
+
+## Getting Started
+
+Install `amplitude-tracker` using pip:
+
+```
+pip install amplitude-tracker
+```
+
+Inside your app, you’ll want to *set your* `write_key` before making any analytics calls:
+
+```python
+import amplitude_tracker as amplitude
+
+amplitude.write_key = 'xxxxxxxxxxxxxxx'
+```
+*Note:* If you need to send data to multiple Segment sources, you can initialize a new Client for each write_key.
+
+## Development Settings
+
+The default initialization settings are production-ready and queue messages to be processed by a background thread.
+
+In development you might want to enable some settings to make it easier to spot problems. Enabling amplitude.debug will log debugging info to the Python logger. You can also add an on_error handler to specifically print out the response you’re seeing from the Amplitude's API.
+
+
+
+```python
+def on_error(error, items):
+    print("An error occurred:", error)
+
+
+analytics.debug = True
+analytics.on_error = on_error
+```
+
+
+## Track
+
+`track` lets you record the actions your users perform. Every action triggers what we call an “event”, which can also have associated properties.
+
+```python
+import amplitude_tracker as amplitude
+amplitude.write_key = 'xxxxxxxxxxxxxxx'
+
+amplitude.track(
 '''
 
 install_requires = [
