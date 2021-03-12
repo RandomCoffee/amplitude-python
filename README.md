@@ -41,8 +41,8 @@ def on_error(error, items):
     print("An error occurred:", error)
 
 
-analytics.debug = True
-analytics.on_error = on_error
+amplitude.debug = True
+amplitude.on_error = on_error
 ```
 
 
