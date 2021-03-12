@@ -1,12 +1,11 @@
-﻿Amplitude Tracker
-==============
-
-<p align="center">
+﻿<p align="center">
     <a href="https://amplitude.com" target="_blank" align="center">
         <img src="https://amplitude.com/wp-content/uploads/2020/09/site-logo2.svg" width="280">
     </a>
 </p>
 
+Amplitude Tracker
+==============
 Amplitude Tracker library lets you record analytics data from your Python code to [Amplitude](https://amplitude.com)
 
 
