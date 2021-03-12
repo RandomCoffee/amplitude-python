@@ -1,10 +1,18 @@
 ﻿Amplitude Tracker
 ==============
 
+<p align="center">
+    <a href="https://amplitude.com" target="_blank" align="center">
+        <img src="https://amplitude.com/wp-content/uploads/2020/09/site-logo2.svg" width="280">
+    </a>
+</p>
+
 Amplitude Tracker library lets you record analytics data from your Python code to [Amplitude](https://amplitude.com)
 
 
 ## Getting Started
+
+[![PyPi page link -- version](https://img.shields.io/pypi/v/sentry-sdk.svg)](https://pypi.python.org/pypi/sentry-sdk)
 
 Install `amplitude-tracker` using pip:
 
