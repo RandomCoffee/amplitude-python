@@ -112,7 +112,7 @@ tests_require = [
 setup(
     name='amplitude-tracker',
     version=VERSION,
-    url='https://github.com/RandomCoffee/amplitude',
+    url='https://github.com/RandomCoffee/amplitude-python',
     author='RandomCoffee',
     author_email='tech@random-coffee.com',
     maintainer='RandomCoffee',
