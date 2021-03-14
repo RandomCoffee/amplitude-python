@@ -11,7 +11,7 @@ Amplitude Tracker library lets you record analytics data from your Python code t
 
 ## Getting Started
 
-[![PyPi page link -- version](https://img.shields.io/pypi/v/sentry-sdk.svg)](https://pypi.python.org/pypi/sentry-sdk)
+[![PyPi page link -- version](https://img.shields.io/pypi/v/amplitude_tracker.svg)](https://pypi.python.org/pypi/amplitude_tracker)
 
 Install `amplitude-tracker` using pip:
 
